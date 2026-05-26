@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "matched_filter_beamformer"
+version = "1.0.0"
+description = "Spatial matched-filter beamforming for microbeamforming ultrasound arrays."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [
+    { name = "Luuk Verhoef" },
+    { name = "Pieter Kruizinga" },
+    { name = "Jason Voorneveld", email = "j.voorneveld@erasmusmc.nl" },
+]
+keywords = ["ultrasound", "beamforming", "microbeamforming", "matched-filter", "4d-imaging"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+
+# CuPy is intentionally NOT listed here — it must match the system CUDA
+# version. Install it via one of the extras below, e.g. `pip install .[cu12]`.
+dependencies = [
+    "numpy>=1.23",
+    "scipy>=1.10",
+    "h5py>=3.8",
+    "tqdm>=4.65",
+    "matplotlib>=3.7",
+    "ipywidgets>=8.0",
+    "vtk>=9.2",
+    "jupyter>=1.0",
+]
+
+[project.optional-dependencies]
+# Pick the extra matching your CUDA toolkit. See https://docs.cupy.dev/en/stable/install.html
+cu12 = ["cupy-cuda12x>=12.0"]
+cu13 = ["cupy-cuda13x>=13.0"]
+
+[project.urls]
+Homepage   = "https://github.com/BrainEchoLab/Matched_filter_beamformer"
+Repository = "https://github.com/BrainEchoLab/Matched_filter_beamformer"
+Data       = "https://doi.org/10.5281/zenodo.20158128"

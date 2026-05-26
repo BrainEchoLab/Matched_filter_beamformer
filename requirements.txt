@@ -1,0 +1,14 @@
+# Core scientific stack — installable on any platform.
+numpy>=1.23
+scipy>=1.10
+h5py>=3.8
+tqdm>=4.65
+matplotlib>=3.7
+ipywidgets>=8.0
+vtk>=9.2
+jupyter>=1.0
+
+# CuPy must match your CUDA toolkit version. Pick ONE of the lines below
+# (uncomment) or install manually following https://docs.cupy.dev/en/stable/install.html
+# cupy-cuda12x>=12.0
+# cupy-cuda13x>=13.0
