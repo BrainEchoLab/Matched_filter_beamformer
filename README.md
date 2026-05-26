@@ -4,7 +4,7 @@ Reference implementation of the spatial matched-filter beamformer for
 microbeamforming probes, accompanying the paper:
 
 > Verhoef L., Kruizinga P., Voorneveld J. **Four-dimensional ultrasound imaging
-> with microbeamforming arrays.** *IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control* (2026).
+> with microbeamforming arrays.** submitted **.
 
 The single user-facing entry point is the Jupyter notebook
 [`matched_filter_ubf.ipynb`](matched_filter_ubf.ipynb). It reconstructs 3D
