@@ -115,10 +115,6 @@ speed         = "1000"           # spinning-disk only — tangential speed in mm
 ├── LICENSE                      ← GPL-3.0
 ├── data/                        ← created on first run; not tracked in git
 ├── results/                     ← created on first run; not tracked in git
-└── preprocessing/               ← scripts used to build the Zenodo data;
-    ├── README.md                  not needed for reproducing the paper
-    ├── load_rf_iqmodulate_microbeamform_save_preprocessed.m
-    └── preprocess_rfdata.ipynb
 ```
 
 The contents of `preprocessing/` are included for transparency only — you do
@@ -133,24 +129,19 @@ If you use this code, please cite both the paper and the dataset:
 @article{verhoef2026microbeamforming,
   author  = {Verhoef, Luuk and Kruizinga, Pieter and Voorneveld, Jason},
   title   = {Four-dimensional ultrasound imaging with microbeamforming arrays},
-  journal = {IEEE Transactions on Ultrasonics, Ferroelectrics, and Frequency Control},
-  year    = {2026}
+  journal = {},
+  year    = {}
 }
 
 @dataset{verhoef2026microbeamforming_data,
   author    = {Verhoef, Luuk and Kruizinga, Pieter and Voorneveld, Jason},
   title     = {Example acquisitions for: Four-dimensional ultrasound imaging with microbeamforming arrays},
   year      = {2026},
-  publisher = {Zenodo},
-  doi       = {10.5281/zenodo.20158128}
+  publisher = {},
+  doi       = {}
 }
 ```
 
 ## License
 
 GPL-3.0 — see [`LICENSE`](LICENSE).
-
-## Contact
-
-Jason Voorneveld — *j.voorneveld@erasmusmc.nl* — BrainEcho Lab, Department of
-Neuroscience, Erasmus MC, Rotterdam, the Netherlands.
