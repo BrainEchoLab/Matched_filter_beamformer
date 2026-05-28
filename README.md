@@ -49,8 +49,8 @@ Clone the repository and create an environment.
 
 ```bash
 # navigate to the parent directory you want to clone the repository to
-git clone https://github.com/BrainEchoLab/Microbeamforming_Matched_Filter.git
-cd Microbeamforming_Matched_Filter
+git clone https://github.com/BrainEchoLab/Matched_filter_beamformer.git
+cd Matched_filter_beamformer
 # create a virtual environment using either venv or conda
 # venv
 python -m venv .venv
